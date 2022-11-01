@@ -29,5 +29,11 @@ namespace AppServiceTest.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("{id:int}")]
+        public string GetName(int id)
+        {
+            return "This is test result" + id;
+        }
     }
 }
